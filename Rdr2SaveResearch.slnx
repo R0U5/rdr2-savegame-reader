@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="src/Rdr2SaveResearch/Rdr2SaveResearch.csproj" />
+  <Project Path="src/Rdr2MissionSync/Rdr2MissionSync.csproj" />
   <Project Path="tests/Rdr2SaveResearch.SelfTest/Rdr2SaveResearch.SelfTest.csproj" />
+  <Project Path="tests/Rdr2MissionSync.Tests/Rdr2MissionSync.Tests.csproj" />
 </Solution>
