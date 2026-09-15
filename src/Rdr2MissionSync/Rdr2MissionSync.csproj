@@ -5,6 +5,10 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- Consumed as a library by CoopStory.Sidecar via ProjectReference; never
+         published on its own. Keeps publish output collection from gathering
+         this project's outputs (NETSDK1152 hardening, see Rdr2SaveResearch). -->
+    <IsPublishable>false</IsPublishable>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rdr2SaveResearch\Rdr2SaveResearch.csproj" />

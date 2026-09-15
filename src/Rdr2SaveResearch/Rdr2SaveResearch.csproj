@@ -6,5 +6,11 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- Referenced by CoopStory.Sidecar (via Rdr2MissionSync). This project is
+         an Exe, so without this flag `dotnet publish -r win-x64` on the sidecar
+         collects BOTH the RID-agnostic and RID-specific apphost/deps/runtimeconfig
+         sets and fails with NETSDK1152. Only the library DLL should flow through
+         the ProjectReference. -->
+    <IsPublishable>false</IsPublishable>
   </PropertyGroup>
 </Project>
